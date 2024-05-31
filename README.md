@@ -32,19 +32,7 @@ In this project, I successfully set up osTicket, an open-source support ticket s
 
 <h2>Installation Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/n8Yw7wD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<img src="https://i.imgur.com/LZa4oFw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p>
-  <img src="https://i.imgur.com/VdDEM0a.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
-<p>
+
 1. Create and Configure Azure VM:
 Created an Azure Virtual Machine and named it OS-TICKET.
 Configured the VM with Windows Server and necessary network settings.
@@ -63,11 +51,24 @@ Downloaded and installed the Rewrite Module (rewrite_amd64_en-US.msi).
 Created a directory C:\PHP on the C drive.
 Downloaded PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzipped the contents into C:\PHP.
 Downloaded and installed the Visual C++ Redistributable (VC_redist.x86.exe).
+
+<p>
+<img src="https://i.imgur.com/n8Yw7wD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<img src="https://i.imgur.com/LZa4oFw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+  <img src="https://i.imgur.com/VdDEM0a.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 5. Install MySQL:
@@ -98,17 +99,19 @@ Enabled php_imap.dll.
 Enabled php_intl.dll.
 Enabled php_opcache.dll.
 Refreshed the osTicket site in the browser to observe the changes.
-
-9. Configure osTicket:
+10. Configure osTicket:
 Renamed ost-sampleconfig.php to ost-config.php in C:\inetpub\wwwroot\osTicket\include.
 Assigned permissions to ost-config.php:
 Disabled inheritance and removed all existing permissions.
 Added new permissions: Everyone -> All.
-10. Setup MySQL Database:
+11. Setup MySQL Database:
 
 Downloaded and installed HeidiSQL.
 Opened HeidiSQL and created a new session with the credentials root/Password1.
 Connected to the session and created a database named osTicket.
+![image](https://github.com/iyke85/OsTicket-prereqs/assets/159981310/de4959f1-3d16-4053-ad47-e303d4e22e9a)
+![image](https://github.com/iyke85/OsTicket-prereqs/assets/159981310/10feca43-9c96-476f-b6e0-c12cda824d7e)
+
 
 11. Complete osTicket Setup in Browser:
 Continued setting up osTicket in the browser.
@@ -127,12 +130,12 @@ End Users can access osTicket via: http://localhost/osTicket/.
 Cleaned up the installation:
 Deleted the setup directory: C:\inetpub\wwwroot\osTicket\setup.
 Set ost-config.php to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php.
+![image](https://github.com/iyke85/OsTicket-prereqs/assets/159981310/29abc6a0-ee75-4e26-b94f-47758d7b310c)
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
                                                  Summary
